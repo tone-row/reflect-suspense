@@ -4,3 +4,5 @@ Created this simple example to show how you can suspend until getting the initia
 npm install
 npm run dev
 ```
+
+Interesting part is in `src/App.tsx`
