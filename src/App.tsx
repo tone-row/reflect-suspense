@@ -19,6 +19,11 @@ const getCount = new Promise((resolve) => {
 });
 
 export default function App() {
+  /**
+   * Using the `use` hook to suspend until the
+   * initial count value is available. This could
+   * also be done via react-query or SWR.
+   */
   const initial = use(getCount);
   const onClick = () => {
     void r.mutate.increment(1);
